@@ -1,6 +1,172 @@
-.T1 {
+h1{
   display: flex;
-  align-items: center;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 0px;
+position:flex;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+}
+#table-of-contents {
+  background-color: #fff;
+  border-radius: 10px; /* Slightly smaller rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Reduced shadow */
+  margin-bottom: 20px; /* Reduced bottom margin */
+  overflow: hidden;
+  padding: 15px; /* Reduced padding */
+}
+
+#table-of-contents h2 {
+  font-size: 1.6em; /* Smaller heading */
+  margin: 0 0 10px; /* Reduced bottom margin for heading */
+  padding: 15px; /* Reduced heading padding */
+  color: #fff;
+  background-color: #556B2F;
+  border-bottom: none;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+#table-of-contents ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#table-of-contents ul li {
+  width: 100%;
+  margin: 10px 0; /* Reduced vertical margins */
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+#table-of-contents ul li:hover {
+  transform: translateX(3px); /* Reduced hover shift */
+}
+
+#table-of-contents ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9em; /* Smaller font for links */
+  font-weight: bold;
+  padding: 12px; /* Reduced padding for links */
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: auto;
+}
+
+#table-of-contents ul li a:last-child {
+  border-bottom: none;
+}
+
+#table-of-contents ul li a:hover {
+  background-color: #556B2F;
+  color: white;
+}
+
+#table-of-contents ul ul {
+  display: none;
+  padding-left: 15px; /* Reduced padding for sub-menus */
+}
+
+#table-of-contents ul li:hover > ul {
+  display: block;
+}
+
+#table-of-contents ul ul li {
+  width: 100%;
+  margin: 3px 0; /* Reduced vertical margins for sub-links */
+  text-align: left;
+}
+
+#table-of-contents ul ul li a {
+  border: none;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 0.8em; /* Smaller font for sub-links */
+  padding: 5px; /* Reduced padding for sub-links */
+}
+
+#table-of-contents ul ul li a:hover {
+  background-color: #e0e0e0;
+  color: #008080;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+ background-image:url(Pictures/dhaka-state-location-within-bangladesh-3d-isometric-map_97886-25851.jpg);/* A dark olive green, similar to the poster */
+  color: rgb(172, 10, 10);
+  padding-top: 20px;
+  padding-bottom: 180px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+header .group {
+  font-style: italic;
+}
+
+header .course {
+  font-size: 0.9em;
+}
+
+.top-images {
+  display: flex;
   justify-content: space-around;
-  text-size-adjust: 10;
+  margin-bottom: 20px;
+}
+
+.top-images img {
+  width: 24%; /* Adjust as needed */
+  height: auto;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: white;
+}
+
+section h2 {
+  color: #556B2F;
+  border-bottom: 2px solid #556B2F;
+  padding-bottom: 5px;
+}
+
+section h3 {
+  color: #556B2F;
+  margin-top: 15px;
+}
+
+/* Add more specific styling for each section as needed */
+
+#history img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px; /* Add some padding */
+  margin-top: 20px; /* Add space above the footer */
+  font-size: 0.9em; /* Slightly smaller font size */
 }
